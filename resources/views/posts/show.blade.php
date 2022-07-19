@@ -76,6 +76,11 @@
       </div>
 
       <section class="col-span-8 col-start-5 mt-10 space-y-6">
+        @foreach ($post->comments as $comment)
+          {{-- N + 1 (Solved) --}}
+          <x-frontend.post-comment :comment="$comment" />
+        @endforeach
+        
         @auth
           <x-frontend.panel>
             <form method="POST" action="/posts/{{ $post->slug }}/comments">
@@ -105,11 +110,6 @@
             Please <a href="/register" class="text-blue-500 hover:underline">Register</a> or <a href="/login" class="text-blue-500 hover:underline">Login</a> to leave a comment!
           </p>
         @endauth
-
-        @foreach ($post->comments as $comment)
-          {{-- N + 1 (Solved) --}}
-          <x-frontend.post-comment :comment="$comment" />
-        @endforeach
       </section>
     </article>
 
