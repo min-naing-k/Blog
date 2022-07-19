@@ -1,0 +1,15 @@
+  <x-slot name="title">
+    <title>{{ $post->title }}</title>
+  </x-slot>
+
+  {{-- Will Go To The Default Slot --}}
+  <h2>
+    {{ $post->title }}
+  </h2>
+  <div>
+    <p>
+      {{-- Allow HTML Tags --}}
+      {!! $post->body !!}
+    </p>
+  </div>
+  <a href="{{ route('posts') }}">Back</a>

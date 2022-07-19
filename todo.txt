@@ -1,0 +1,7 @@
+#TODO
+
+[] show authors who you don't follow yet
+
+[] send email to follwers when author was published a new post.
+   (carefull) => if author created a new private post, dont send email
+   (carefull) => if author change private to public a post, send email again

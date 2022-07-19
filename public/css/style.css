@@ -1,0 +1,18 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.pagination .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  margin: 0 0.15rem;
+}
+
+.pagination .active {
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
